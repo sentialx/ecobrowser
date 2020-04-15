@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  user-select: none;
+  font-family: system-ui, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #eeeeee;
+  position: relative;
+  max-width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+  background-color: white;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#tabbar {
+  display: flex;
+  flex: 1;
+  height: 34px;
+  position: relative;
+  z-index: 2;
+  padding: 4px;
+  padding-bottom: 0;
+  min-width: 0;
+}
+
+#line {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: 1px;
+}
+
+.tab {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 230px;
+  min-width: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.tab:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.tab-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 0;
+  flex: 1;
+}
+
+.tab-close {
+  height: 16px;
+  width: 16px;
+  min-width: 16px;
+  margin-left: 2px;
+  margin-right: -2px;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+}
+
+.add-icon {
+  background-image: url(icons/add.svg);
+  opacity: 0.54;
+}
+
+.close-icon {
+  background-image: url(icons/close.svg);
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.toolbar-button:hover,
+.tab-close:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.tab.selected {
+  background-color: white;
+}
+
+.toolbar-button {
+  height: 100%;
+  min-width: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+}
+
+#add-tab-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  height: calc(100% - 1px);
+  margin-top: 1px;
+}

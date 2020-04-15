@@ -1,0 +1,28 @@
+{
+  "name": "ecobrowser",
+  "version": "0.0.0",
+  "description": "Save the world by using Eco Browser",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentialx/ecobrowser.git"
+  },
+  "keywords": [
+    "electron",
+    "ecology",
+    "browser",
+    "world"
+  ],
+  "author": "Eryk Rakowski <sentialx@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sentialx/ecobrowser/issues"
+  },
+  "homepage": "https://github.com/sentialx/ecobrowser#readme",
+  "devDependencies": {
+    "electron": "^8.2.2"
+  }
+}
