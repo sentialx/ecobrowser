@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, Menu } = require('electron');
 
 app.allowRendererProcessReuse = true;
 
@@ -11,6 +11,8 @@ const createWindow = () => {
       enableRemoteModule: false,
     },
   });
+
+  Menu.setApplicationMenu(null);
 
   window.loadFile('./src/ui/index.html');
 };
