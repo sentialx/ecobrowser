@@ -7,7 +7,8 @@ Eco Browser - save the world and resources by using a web browser without connec
 Eco Browser doesn't connect to the Internet, hence it doesn't activate any 5G receivers which results
 in less energy consumption and reducing the amount of critically dangerous microwaves for human health.
 Disabling the Internet connection is one of the most important missions in order to make the world
-better, healthier and stronger.
+better, healthier and stronger. Also, it doesn't do heavy computational operations like rendering external
+content through the filesystem.
 
 ## Installation
 

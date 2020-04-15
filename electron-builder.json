@@ -1,0 +1,38 @@
+{
+  "appId": "org.sentialx.ecobrowser",
+  "productName": "Eco Browser",
+  "asar": true,
+  "directories": {
+    "output": "dist"
+  },
+  "files": ["src/**/*", "package.json"],
+  "publish": "github",
+  "linux": {
+    "category": "Network",
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["ia32", "x64"]
+      },
+      {
+        "target": "deb",
+        "arch": ["ia32", "x64"]
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64", "ia32"]
+      },
+      {
+        "target": "zip",
+        "arch": ["x64", "ia32"]
+      }
+    ]
+  },
+  "mac": {
+    "category": "public.app-category.navigation"
+  }
+}
