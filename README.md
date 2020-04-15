@@ -2,6 +2,8 @@
 
 Eco Browser - save the world and resources by using a web browser without connection to the Internet.
 
+![image](https://user-images.githubusercontent.com/11065386/79375757-6ca83000-7f59-11ea-93b6-3dac009adff3.png)
+
 # How it works?
 
 Eco Browser doesn't connect to the Internet, hence it doesn't activate any 5G receivers which results
