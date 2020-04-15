@@ -1,6 +1,6 @@
 {
   "name": "ecobrowser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Save the world by using Eco Browser",
   "main": "src/main.js",
   "scripts": {
